@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Mariu"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-01-15 07:45:53 "/>
+        <attribute name="created" value="TWFyaXU7TUFSSVU7MjAyMi0wMS0xNTsiMDM6NTE6NDUgIjsyMDc4"/>
+        <attribute name="edited" value="TWFyaXU7TUFSSVU7MjAyMi0wMS0xNTsiMDc6NDU6NTMgIjsxOzIxOTI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="vendedor, janeiro, feveiro, marco, abril, media" type="Real" array="False" size=""/>
+            <input variable="janeiro"/>
+            <input variable="feveiro"/>
+            <input variable="marco"/>
+            <input variable="abril"/>
+            <assign variable="media" expression="(janeiro+feveiro+marco+abril)/4"/>
+            <output expression="media" newline="True"/>
+            <if expression="media&gt;=5000">
+                <then>
+                    <output expression="&quot;Parabens! Voc&#234; bateu a media de 5000 :D e receber&#225; um bonus de 10%!&quot;" newline="True"/>
+                    <output expression="&quot;Esse &#233; seu abono:&quot;" newline="True"/>
+                    <output expression="media*0.10" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Infelizmente voc&#234; n&#227;o bateu a meta de 5000 :( mas receber&#225; um bonus de 3%&quot;" newline="True"/>
+                    <output expression="&quot;esse &#233; seu abono:&quot;" newline="True"/>
+                    <output expression="media*0.03" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

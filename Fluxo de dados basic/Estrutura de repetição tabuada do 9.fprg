@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Mariu"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-01-16 02:15:34 "/>
+        <attribute name="created" value="TWFyaXU7TUFSSVU7MjAyMi0wMS0xNjsiMDE6NTc6MDEgIjsyMDc1"/>
+        <attribute name="edited" value="TWFyaXU7TUFSSVU7MjAyMi0wMS0xNjsiMDI6MTU6MzQgIjsyOzIxODU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="numero, limete" type="Integer" array="False" size=""/>
+            <assign variable="numero" expression="9"/>
+            <assign variable="limete" expression="90"/>
+            <output expression="&quot;A tabuada do 9 &#233;: &quot;" newline="True"/>
+            <while expression="numero&lt;=limete">
+                <output expression="&quot;Numero: &quot; &amp; numero" newline="True"/>
+                <assign variable="numero" expression="numero+1*9"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
